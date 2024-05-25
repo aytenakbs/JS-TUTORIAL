@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="go()">Kos Bakalim</button>
+    <hr>
+    <img id="at"style="width: 125px;height: 85px;"src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvZnJob3JzZV9nYWxsb3BfY2FudGVyX21hcmUtaW1hZ2Utcm01MDMtbDBqOXJmcmgucG5n.png">
+</body>
+<script>
+
+function go(){
+    var left=10;
+    setInterval(()=>{
+        document.getElementById('at').style.marginLeft=left+"px";
+        left=left+10
+    },100);
+}
+</script>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+
+        }
+        .container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            height:100vh;
+            gap:20px;
+        }
+        .box{
+            width:200px;
+            height:200px;
+            border:solid 1px rgb(0, 0, 0);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+           gap:20px;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+        <div class="card">
+            <div class="box">1</div>
+            <button>Sola Getir</button>
+        </div>
+        <div class="card">
+            <div class="box">2</div>
+            <button>Sola Getir</button>
+        </div>
+        <div class="card">
+            <div class="box">3</div>
+            <button>Sola Getir</button>
+        </div>
+        <div class="card">
+            <div class="box">4</div>
+            <button>Sola Getir</button>
+        </div>
+    </div>
+</body>
+<script>
+    // 1) 4 tane box oluşturulum ve bunları flex kullanarak sayfanın ortasına sabitleyelim.
+    // 2) Boxlarımız altlarında birer buton içersin. Her bir buton kendi box'ı için tanımlanmış olsun.
+    // 3) İlk box sağdan sola hareket etsin.
+    // 4) İkinci box aşağıdan yukarı hareket etsin.
+    // 5) Üçüncü box ise kendi etrafında bir tur atsın
+    // 6) Son box ise scale olarak boyutu büyüsün
+    // 7) Tüm click event geçişlerini transition geçiş efektiyle hareketini görelim
+</script>
+</html>

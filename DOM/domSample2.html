@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="">Şehir</label>
+        <input id="city" type="text"/>
+    </div>
+    <div>
+        <button>Add</button>
+    </div>
+    <div>
+        <ul id="cities">
+            <li>İstanbul</li>
+            <li>Adana</li>
+            <li>Ankara</li>
+        </ul>
+    </div>
+</body>
+<script>
+    function addNewCity(){
+        var newCity =document.getElementById("city").value;
+
+        var liElement=document.createElement("li");
+        liElement.innerHTML=newCity;
+        document.getElementById("cities").appendChild(liElement)
+        document.getElementById("city").value="";
+    }
+</script>
+</html>

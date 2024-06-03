@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="">Char</label>
+        <input type="text" id="char">
+        <button>Find</button>
+    </div>
+    <hr>
+    <button>Start</button>
+    <div id="game">
+        
+    </div>
+</body>
+<script>
+    var cities = [
+    "Adana", "Adiyaman", "Afyonkarahisar", "Agri", "Aksaray", "Amasya", "Ankara", "Antalya", 
+    "Ardahan", "Artvin", "Aydin", "Balikesir", "Bartin", "Batman", "Bayburt", "Bilecik", 
+    "Bingol", "Bitlis", "Bolu", "Burdur", "Bursa", "Canakkale", "Cankiri", "Corum", 
+    "Denizli", "Diyarbakir", "Duzce", "Edirne", "Elazig", "Erzincan", "Erzurum", "Eskisehir", 
+    "Gaziantep", "Giresun", "Gumushane", "Hakkari", "Hatay", "Igdir", "Isparta", "Istanbul", 
+    "Izmir", "Kahramanmaras", "Karabuk", "Karaman", "Kars", "Kastamonu", "Kayseri", "Kirikkale", 
+    "Kirklareli", "Kirsehir", "Kilis", "Kocaeli", "Konya", "Kutahya", "Malatya", "Manisa", 
+    "Mardin", "Mersin", "Mugla", "Mus", "Nevsehir", "Nigde", "Ordu", "Osmaniye", 
+    "Rize", "Sakarya", "Samsun", "Siirt", "Sinop", "Sivas", "Sanliurfa", "Sirnak", 
+    "Tekirdag", "Tokat", "Trabzon", "Tunceli", "Usak", "Van", "Yalova", "Yozgat", 
+    "Zonguldak"
+];
+
+var randomCity="";
+
+function start(){
+    document.getElementById("game").innerHTML=""
+    var randomCityIndex=math.floor(math.random()*cities.length)
+    var randomCity=cities[randomCityIndex].toUpperCase();
+    alert(randomCity)
+    for(i=0;i<randomCity.length;i++){
+
+        console.log(randomCity[i])
+        var h1Element=document.createElement("h1")
+        h1Element.innerHTML="_"
+        document.getElementById("game").appendChild(h1Element)
+    }
+}
+function find(){
+    var userChar=document.getElementById("char").value.toLowerCase();
+
+    
+}
+
+</script>
+</html>

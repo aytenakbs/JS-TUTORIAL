@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display:flex;justify-content: center;align-items: center;height:100vh;">
+    <div id="box" style="width:300px;height:300px; border-style:solid; border-width:2px;"></div>
+</div>
+</body>
+<script>
+    var colors=["yellow","red","green","blue","orange","purple","black","pink"]
+    setInterval(()=>{
+        var randomColor=Math.floor(Math.random()*colors.length)
+        document.getElementById("box").style.backgroundColor=colors[randomColor]
+    },1000);
+</script>
+</html>

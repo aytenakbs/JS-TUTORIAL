@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <label for="">Sayı</label>
+    <input type="number" id="sayi">
+</div>
+<div>
+    <button onclick="add()">Add</button>
+</div>
+<hr>
+<ul id="numbers">
+    <li>39</li>
+    <li>11</li>
+</ul>
+
+</body>
+<script>
+    function add(){
+        var count=document.getElementById("sayi").value
+        for(i=0;i<count;i++){
+            var liElement=document.createElement("li")
+            var randomNumber=math.floor(math.random()*100)
+            liElement.innerHTML=randomNumber
+            document.getElementById("numbers").appendChild(liElement)
+        }
+    }
+</script>
+</html>

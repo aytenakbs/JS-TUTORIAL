@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div>
+        <label for="">Genişlik</label>
+        <input id="width" type="text"/>
+    </div>
+    <div>
+        <label for="">Yükseklik</label>
+        <input id="height" type="text"/>
+    </div>
+    <div>
+        <label for="">Renk</label>
+        <input id="color" type="text"/>
+    </div>
+    <div>
+        <button onclick="Create()">Oluştur</button>
+    </div>
+</div>
+    <hr>
+</body>
+<script>
+    function Create(){
+        var divElement=document.createElement("div")
+        divElement.style.width=document.getElementById("width").value+"px"
+        divElement.style.height=document.getElementById("height").value+"px"
+        divElement.style.backgroundColor.getElementById("color").value
+
+        document.getElementById("container").appendChild(divElement)
+    }
+</script>
+</html>
